@@ -34,8 +34,8 @@ plt.title('Temprature_data Plotting')
 plt.xlabel('Date')
 plt.ylabel('Temperature')
 # Save the scatter plot to two output files (on the Docker host).
-f.savefig("output.pdf", bbox_inches='tight')
-f.savefig("output.png", bbox_inches='tight')
+f.savefig("https://github.com/HaleemaEssa/jenkins-parallel-pipeline.git/output.pdf", bbox_inches='tight')
+f.savefig("https://github.com/HaleemaEssa/jenkins-parallel-pipeline.git/output.png", bbox_inches='tight')
 ################ Plotting Humidity Data ##############
 import matplotlib.pyplot as plt1
 plt1.style.use('seaborn')
@@ -47,7 +47,7 @@ plt1.tight_layout()
 plt1.title('Humidity_data Plotting')
 plt1.xlabel('Date')
 plt1.ylabel('Humidity')
-f1.savefig("output1.png", bbox_inches='tight')
+f1.savefig("https://github.com/HaleemaEssa/jenkins-parallel-pipeline.git/output1.png", bbox_inches='tight')
 ############# Temp & Hum  Data in the same figure ################
 import matplotlib.pyplot as pp
 pp.style.use('seaborn')
@@ -61,7 +61,7 @@ pp.tight_layout()
 pp.title('Temperature_and_Humidity_data Plotting')
 pp.xlabel('Date')
 pp.ylabel('Temperature & Humidity')
-f55.savefig("output55.png", bbox_inches='tight')
+f55.savefig("https://github.com/HaleemaEssa/jenkins-parallel-pipeline.git/output55.png", bbox_inches='tight')
 ################ SubPlotting Data ##################
 import matplotlib.pyplot as pl1
 pl1.style.use('seaborn')
@@ -86,7 +86,7 @@ ax3.set_title('Temperature & Humidity_data Plotting')
 ax3.set_xlabel('Date')
 ax3.set_ylabel('Temperature &  Humidity ')
 pl1.tight_layout()
-fig1.savefig("output11.png", bbox_inches='tight')
+fig1.savefig("https://github.com/HaleemaEssa/jenkins-parallel-pipeline.git/output11.png", bbox_inches='tight')
 ################ Plotting Resampled Humidity Data ################
 import pandas as pd1
 import matplotlib.pyplot as plt2
