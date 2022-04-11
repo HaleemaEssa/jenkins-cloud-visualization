@@ -35,8 +35,8 @@ plt.title('Temprature_data Plotting')
 plt.xlabel('Date')
 plt.ylabel('Temperature')
 # Save the scatter plot to two output files (on the Docker host).
-f.savefig("https://github.com/HaleemaEssa/jenkins-parallel-pipeline.git/output.pdf", bbox_inches='tight')
-f.savefig("https://github.com/HaleemaEssa/jenkins-parallel-pipeline.git/output.png", bbox_inches='tight')
+f.savefig("output.pdf", bbox_inches='tight')
+f.savefig("output.png", bbox_inches='tight')
 ################ Plotting Humidity Data ##############
 import matplotlib.pyplot as plt1
 plt1.style.use('seaborn')
@@ -48,7 +48,7 @@ plt1.tight_layout()
 plt1.title('Humidity_data Plotting')
 plt1.xlabel('Date')
 plt1.ylabel('Humidity')
-f1.savefig("https://github.com/HaleemaEssa/jenkins-parallel-pipeline.git/output1.png", bbox_inches='tight')
+f1.savefig("output1.png", bbox_inches='tight')
 ############# Temp & Hum  Data in the same figure ################
 import matplotlib.pyplot as pp
 pp.style.use('seaborn')
