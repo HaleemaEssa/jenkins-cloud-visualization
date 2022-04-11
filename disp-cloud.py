@@ -10,6 +10,7 @@ print (type(df['Date'][0]))
 df.set_index('Date', inplace=True)
 print(df)
 df4=df.resample('D').mean() #in Cloud
+df4=df4.dropna()
 df4.to_csv("/data/res_data.csv")        
 print(df4)
 import numpy as np       
