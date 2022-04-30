@@ -35,8 +35,8 @@ plt.title('Temprature_data Plotting')
 plt.xlabel('Date')
 plt.ylabel('Temperature')
 # Save the scatter plot to two output files (on the Docker host).
-f.savefig("output.pdf", bbox_inches='tight')
-f.savefig("output.png", bbox_inches='tight')
+f.savefig("/data/output.pdf", bbox_inches='tight')
+f.savefig("/data/output.png", bbox_inches='tight')
 ################ Plotting Humidity Data ##############
 import matplotlib.pyplot as plt1
 plt1.style.use('seaborn')
@@ -48,7 +48,7 @@ plt1.tight_layout()
 plt1.title('Humidity_data Plotting')
 plt1.xlabel('Date')
 plt1.ylabel('Humidity')
-f1.savefig("output1.png", bbox_inches='tight')
+f1.savefig("/data/output1.png", bbox_inches='tight')
 ############# Temp & Hum  Data in the same figure ################
 import matplotlib.pyplot as pp
 pp.style.use('seaborn')
@@ -62,7 +62,7 @@ pp.tight_layout()
 pp.title('Temperature_and_Humidity_data Plotting')
 pp.xlabel('Date')
 pp.ylabel('Temperature & Humidity')
-f55.savefig("output55.png", bbox_inches='tight')
+f55.savefig("/data/output55.png", bbox_inches='tight')
 ################ SubPlotting Data ##################
 import matplotlib.pyplot as pl1
 pl1.style.use('seaborn')
@@ -104,7 +104,7 @@ plt2.tight_layout()
 plt2.title('Resampled_Humidity_data Plotting')
 plt2.xlabel('Date')
 plt2.ylabel('Humidity')
-f2.savefig("output2.png", bbox_inches='tight')
+f2.savefig("/data/output2.png", bbox_inches='tight')
 ################ Plotting Resampled Temperature Data #########
 import matplotlib.pyplot as plt3
 plt3.style.use('seaborn')
@@ -116,7 +116,7 @@ plt3.tight_layout()
 plt3.title('Resampled_Temperature_data Plotting')
 plt3.xlabel('Date')
 plt3.ylabel('Temperature')
-f3.savefig("output3.png", bbox_inches='tight')
+f3.savefig("/data/output3.png", bbox_inches='tight')
 ############# Resampled data in the same figure ################
 import matplotlib.pyplot as p        
 p.style.use('seaborn')
@@ -130,7 +130,7 @@ p.tight_layout()
 p.title('Resampled_Temperature_and_Humidity_data Plotting')
 p.xlabel('Date')
 p.ylabel('Temperature & Humidity')
-f5.savefig("output5.png", bbox_inches='tight')
+f5.savefig("/data/output5.png", bbox_inches='tight')
 ################## SubPlotting Resampled Data #######
 import matplotlib.pyplot as pl
 pl.style.use('seaborn')
@@ -155,4 +155,4 @@ ax3.set_title('Resampled_Temperature & Humidity_data Plotting')
 ax3.set_xlabel('Date')
 ax3.set_ylabel('Temperature &  Humidity ')
 pl.tight_layout()
-fig.savefig("output4.png", bbox_inches='tight')
+fig.savefig("/data/output4.png", bbox_inches='tight')
