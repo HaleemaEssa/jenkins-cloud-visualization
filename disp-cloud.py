@@ -37,6 +37,16 @@ plt.ylabel('Temperature')
 # Save the scatter plot to two output files (on the Docker host).
 f.savefig("/data/output.pdf", bbox_inches='tight')
 f.savefig("/data/output.png", bbox_inches='tight')
+#####
+####
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+img = mpimg.imread('/data/output.png')
+plt.imshow(img)
+plt.show()
+
+####
+####
 ################ Plotting Humidity Data ##############
 import matplotlib.pyplot as plt1
 plt1.style.use('seaborn')
