@@ -39,11 +39,11 @@ f.savefig("/data/output.pdf", bbox_inches='tight')
 f.savefig("/data/output.png", bbox_inches='tight')
 #####
 ####
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as pltt
 import matplotlib.image as mpimg
 img = mpimg.imread('/data/output.png')
-plt.imshow(img)
-plt.show()
+pltt.imshow(img)
+pltt.show()
 
 ####
 ####
