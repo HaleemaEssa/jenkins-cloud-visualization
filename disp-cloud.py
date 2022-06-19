@@ -97,7 +97,7 @@ ax3.set_title('Temperature & Humidity_data Plotting')
 ax3.set_xlabel('Date')
 ax3.set_ylabel('Temperature &  Humidity ')
 pl1.tight_layout()
-fig1.savefig("output11.png", bbox_inches='tight')
+fig1.savefig("/data/output11.png", bbox_inches='tight')
 ################ Plotting Resampled Humidity Data ################
 import pandas as pd1
 import matplotlib.pyplot as plt2
