@@ -5,7 +5,7 @@ from datetime import datetime
 import pandas as pd
 df=pd.read_csv('/data/data2.csv') #,header=None)
 df['Date']=pd.to_datetime(df['Date'])
-print (type(df['Date'][0]))
+#print (type(df['Date'][0]))
    #     print(df)
 df.set_index('Date', inplace=True)
 print(df)
