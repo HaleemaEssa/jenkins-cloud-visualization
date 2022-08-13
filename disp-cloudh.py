@@ -11,14 +11,14 @@ df.set_index('Date', inplace=True)
 print(df)
 df4=df.resample('D').mean() #in Cloud
 df4=df4.dropna()
-df4=df4.drop_duplicates(keep=’first’)
+df4=df4.drop_duplicates(subset=['Sound', 'Flame', 'Humidity', 'Temperature'], keep=’first’)
 df4.to_csv("/data/res_data.csv")        
 print(df4)
 print("==========================="
 ###every 10 minutes Resampled###13/8/2022###
 df4h=df.resample('10T').mean() #in Cloud
 df4h=df4h.dropna()
-df4h=df4h.drop_duplicates(keep=’first’)
+df4h=df4h.drop_duplicates(subset=['Sound', 'Flame', 'Humidity', 'Temperature'], keep=’first’)
 df4h.to_csv("/data/res_datah.csv")        
 print(df4h)
 ############
