@@ -23,6 +23,6 @@ RUN pip3 install pandas
 #CMD ["acon.py"]
 #CMD ["aacon1.py"]
 #CMD ["plot.py"]
-CMD ["disp-cloud.py"]
+CMD ["disp-cloudh.py"] ##h for resampling with 10 Min
 ENTRYPOINT ["python3"]
 #CMD ["python","./aacon1.py"]
