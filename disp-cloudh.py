@@ -14,7 +14,7 @@ df4=df4.dropna()
 df4=df4.drop_duplicates(subset=['Sound', 'Flame', 'Humidity', 'Temperature'])
 df4.to_csv("/data/res_data.csv")        
 print(df4)
-print("==========================="
+print("===========================")
 ###every 10 minutes Resampled###13/8/2022###
 df4h=df.resample('10T').mean() #in Cloud
 df4h=df4h.dropna()
