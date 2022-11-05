@@ -27,7 +27,7 @@ import matplotlib.pyplot as plt
 from matplotlib import dates as mpl_dates
 from datetime import datetime, timedelta
 import pandas as pd
-plt.style.use('seaborn')
+#plt.style.use('seaborn')
 data=pd.read_csv('/data/data2.csv')
 ########### Plotting Temperature Data ################
 data['Date'] = pd.to_datetime(data['Date'])
@@ -58,7 +58,7 @@ pltt.show()
 ####
 ################ Plotting Humidity Data ##############
 import matplotlib.pyplot as plt1
-plt1.style.use('seaborn')
+#plt1.style.use('seaborn')
 f1=plt1.figure()
 plt1.plot_date(data['Date'], data['Humidity'])
 date_format = mpl_dates.DateFormatter('%y-%m-%d')
@@ -70,7 +70,7 @@ plt1.ylabel('Humidity')
 f1.savefig("/data/output1.png", bbox_inches='tight')
 ############# Temp & Hum  Data in the same figure ################
 import matplotlib.pyplot as pp
-pp.style.use('seaborn')
+#pp.style.use('seaborn')
 f55=pp.figure()
 pp.plot_date(data['Date'], data['Temperature'], label='Temperature')
 pp.plot_date(data['Date'], data['Humidity'], label='Humudity')
@@ -84,7 +84,7 @@ pp.ylabel('Temperature & Humidity')
 f55.savefig("/data/output55.png", bbox_inches='tight')
 ################ SubPlotting Data ##################
 import matplotlib.pyplot as pl1
-pl1.style.use('seaborn')
+#pl1.style.use('seaborn')
 fig1, (ax1, ax2, ax3)=pl1.subplots(nrows=3, ncols=1, sharex=True) #, figsize=(15,5))
 ax1.plot_date(data['Date'], data['Temperature'], label='Temperature')
 ax2.plot_date(data['Date'], data['Humidity'], label='Humudity')
@@ -113,7 +113,7 @@ import matplotlib.pyplot as plt2
 data1=pd1.read_csv('/data/res_data.csv')
 data1['Date'] = pd1.to_datetime(data1['Date'])
 data1.sort_values('Date', inplace=True)
-plt2.style.use('seaborn')
+#plt2.style.use('seaborn')
 f2=plt2.figure()
 
 plt2.plot_date(data1['Date'], data1['Humidity'])
@@ -130,7 +130,7 @@ import matplotlib.pyplot as plt2h
 data1h=pd1h.read_csv('/data/res_datah.csv')
 data1h['Date'] = pd1h.to_datetime(data1h['Date'])
 data1h.sort_values('Date', inplace=True)
-plt2h.style.use('seaborn')
+#plt2h.style.use('seaborn')
 f2h=plt2h.figure()
 
 plt2h.plot_date(data1h['Date'], data1h['Humidity'])
@@ -143,7 +143,7 @@ plt2h.ylabel('Humidity')
 f2h.savefig("/data/output2h.png", bbox_inches='tight')
 ################ Plotting Resampled Temperature Data #########
 import matplotlib.pyplot as plt3
-plt3.style.use('seaborn')
+#plt3.style.use('seaborn')
 f3=plt3.figure()
 plt3.plot_date(data1['Date'], data1['Temperature'])
 date_format = mpl_dates.DateFormatter('%y-%m-%d')
@@ -155,7 +155,7 @@ plt3.ylabel('Temperature')
 f3.savefig("/data/output3.png", bbox_inches='tight')
 ################ Plotting Resampled Temperature-10 Min Data #########
 import matplotlib.pyplot as plt3h
-plt3h.style.use('seaborn')
+#plt3h.style.use('seaborn')
 f3h=plt3h.figure()
 plt3h.plot_date(data1h['Date'], data1h['Temperature'])
 date_formath = mpl_dates.DateFormatter('%y-%m-%d')
@@ -167,7 +167,7 @@ plt3h.ylabel('Temperature')
 f3h.savefig("/data/output3h.png", bbox_inches='tight')
 ############# Resampled data in the same figure ################
 import matplotlib.pyplot as p        
-p.style.use('seaborn')
+#p.style.use('seaborn')
 f5=p.figure()
 p.plot_date(data1['Date'], data1['Temperature'], label='Temperature')
 p.plot_date(data1['Date'], data1['Humidity'], label='Humudity')
@@ -181,7 +181,7 @@ p.ylabel('Temperature & Humidity')
 f5.savefig("/data/output5.png", bbox_inches='tight')
 ################## SubPlotting Resampled Data #######
 import matplotlib.pyplot as pl
-pl.style.use('seaborn')
+#pl.style.use('seaborn')
 f4=pl.figure()
 fig, (ax1, ax2, ax3)=pl.subplots(nrows=3, ncols=1, sharex=True) #, figsize=(15,5))
 ax1.plot_date(data1['Date'], data1['Temperature'], label='Temperature')
@@ -206,7 +206,7 @@ pl.tight_layout()
 fig.savefig("/data/output4.png", bbox_inches='tight')
 ################## SubPlotting Resampled Data-10 Min #######
 import matplotlib.pyplot as plh
-plh.style.use('seaborn')
+#plh.style.use('seaborn')
 f4h=plh.figure()
 figh, (ax1, ax2, ax3)=plh.subplots(nrows=3, ncols=1, sharex=True) #, figsize=(15,5))
 ax1.plot_date(data1h['Date'], data1h['Temperature'], label='Temperature')
