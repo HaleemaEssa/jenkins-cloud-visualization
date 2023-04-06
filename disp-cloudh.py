@@ -63,7 +63,7 @@ f1=plt1.figure()
 plt1.plot_date(data['Date'], data['Humidity'])
 date_format = mpl_dates.DateFormatter('%d-%m') #'%y-%m-%d
 plt1.gca().xaxis.set_major_formatter(date_format)
-plt1.tight_layout()%m
+plt1.tight_layout()
 plt1.title('Humidity_data Plotting')
 plt1.xlabel('Date')
 plt1.ylabel('Humidity')
